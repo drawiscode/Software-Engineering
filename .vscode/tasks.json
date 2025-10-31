@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build main",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-Wall",
+                "-std=c++11",
+                "main.cpp",
+                "Transaction_Time.cpp",
+                "Transaction_Information.cpp",
+                "Account.cpp",
+                "-o",
+                "app.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
